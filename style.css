@@ -11,9 +11,11 @@ html {
   font-weight: 300;
   color: rgba(0,0,0,.73);
 }
+
 body {
   margin: 0;
 }
+
 h1, h2, h3 {
   font-family: 'Nunito';
   font-weight: 300;
@@ -24,29 +26,35 @@ h1, h2, h3 {
   color: black;
   display: inline-block;
 }
-h1 {
+
+/*h1 {
   margin: 55px 0 34px;
   font-size: 89px;
-}
+}*/
+
 h2 {
   margin: 21px 0 34px;
   font-size: 55px;
   border-width: 8px;
 }
   h2 + p { margin-top: -21px; }
+
 h3 {
   margin: 0 0 13px;
   font-size: 21px;
   border-width: 5px;
 }
+
 p {
   margin: 0 0 34px;
 }
   strong { color: rgba(0,0,0,.73); }
+
 a {
   color: #86be29;
   text-decoration: none;
 }
+
 .coming_soon:after {
   content: "Coming soon";
   margin: 0 13px;
@@ -56,6 +64,7 @@ a {
   color: gray;
   border-radius: 5px;
 }
+
 .developer a {
   padding: 1px 2px;
   color: rgba(0,0,0,.73);
@@ -70,12 +79,15 @@ a {
     position: relative;
     top: 2px;
   }
-body > div { padding: 89px 0; }
+
+.secondarySection { padding: 89px 0; }
+
 .container {
   max-width: 960px;
   padding: 0 34px;
   margin: 0 auto;
 }
+
 nav {
   float: right;
 }
@@ -100,29 +112,65 @@ nav {
   }
     nav a:last-child:after { display: none; }
 
-header {
+
+.fixedHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255,255,255,.97);
+  box-shadow: 0 1px rgba(255,255,255,.89);
+  border-bottom: 1px solid rgba(0,0,0,.21);
+  z-index: 1000;
+}
+
+.fixedHeader h1 {
+  font-size: 32px;
+}
+
+.primarySection {
   padding: 0;
   box-shadow: 0 1px rgba(255,255,255,.89);
 }
-  header .container {
+  .primarySection h1 {
+    float: left;
+  }
+
+  .primarySection .container {
     position: relative;
   }
-  header .soup {
-    width: 448px;
-    height: 525px;
+
+  .primarySection .screenshots {
+    width: 500px;
+    height: 375px;
     right: 0;
-    top: 167px;
+    bottom: 0;
     position: absolute;
     z-index: -1;
-    background: url(img/orange_red_brown.png) no-repeat;
   }
+
+  .primarySection .screenshots img {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .primarySection .screenshots img:first-child {
+    opacity: 1;
+  }
+
 .hero {
-  margin: 144px 0 34px;
+  padding: 35px 0 50px;
   clear: right;
 }
+  .hero h2 {
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 80px;
+  }
   .description {
-    margin-bottom: 55px;
-    font-size: 27px;
+    width: 455px;
+    margin: 50px 0 0;
+    font-size: 24px;
     line-height: 1.5;
     max-width: 100%;
   }
@@ -131,7 +179,7 @@ header {
       background: white;
     }
 
-header,
+.primarySection,
 .socialNetwork,
 .forYourCompany {
   border-bottom: 1px solid rgba(0,0,0,.21);
@@ -140,6 +188,29 @@ header,
 .socialNetwork {
   background: #eee;
 }
+
+/*.forYourCompany .container {
+  position: relative;
+}
+
+.forYourCompany .bg {
+  position: absolute;
+  z-index: -1;
+  width: 312px;
+  height: 417px;
+  top: -89px;
+  right: 0;
+  background: url(img/support-team2.jpg) no-repeat;
+}
+
+.forYourCompany p {
+  width: 680px;
+  margin: -21px 0 25px;
+}
+
+.forYourCompany p.last {
+  margin: 0;
+}*/
 
 .developers {
   color: white;
@@ -200,27 +271,14 @@ footer nav {
 
 .callForAction {
   margin: 34px 0;
-  padding: 21px 34px;
-  font-size: 21px;
+  padding: 12px 26px;
+  font-size: 19px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 -1px #B60C22;
-  background: #F01936;
-  background: -webkit-linear-gradient(#F01936, #FF2441, #F01431);
-  background:    -moz-linear-gradient(#F01936, #FF2441, #F01431);
-  background:     -ms-linear-gradient(#F01936, #FF2441, #F01431);
-  background:      -o-linear-gradient(#F01936, #FF2441, #F01431);
-  background:         linear-gradient(#F01936, #FF2441, #F01431);
-  border: 3px solid #f2304a;
   border-bottom-width: 1px;
   border-radius: 13px;
-  box-shadow:
-    0 1px rgba(0,0,0,.13),
-    0 3px 0 -1px #c9283e,
-    0 4px 0 -1px rgba(0,0,0,.21),
-    0 5px 5px -2px rgba(0,0,0,.08);
   display: inline-block;
   -webkit-transition: background 500ms;
      -moz-transition: background 500ms;
@@ -228,14 +286,56 @@ footer nav {
        -o-transition: background 500ms;
           transition: background 500ms;
 }
-  .callForAction:hover {
-  background: #FF2441;
-  background: -webkit-linear-gradient(#FF2441, #FF2441);
-  background:    -moz-linear-gradient(#FF2441, #FF2441);
-  background:     -ms-linear-gradient(#FF2441, #FF2441);
-  background:      -o-linear-gradient(#FF2441, #FF2441);
-  background:         linear-gradient(#FF2441, #FF2441);
+  .callForAction.red:hover {
+    background: #FF2441;
+    background: -webkit-linear-gradient(#FF2441, #FF2441);
+    background:    -moz-linear-gradient(#FF2441, #FF2441);
+    background:     -ms-linear-gradient(#FF2441, #FF2441);
+    background:      -o-linear-gradient(#FF2441, #FF2441);
+    background:         linear-gradient(#FF2441, #FF2441);
   }
+
+  .callForAction.red {
+    text-shadow: 0 -1px #B60C22;
+    background: #F01936;
+    background: -webkit-linear-gradient(#F01936, #FF2441, #F01431);
+    background:    -moz-linear-gradient(#F01936, #FF2441, #F01431);
+    background:     -ms-linear-gradient(#F01936, #FF2441, #F01431);
+    background:      -o-linear-gradient(#F01936, #FF2441, #F01431);
+    background:         linear-gradient(#F01936, #FF2441, #F01431);
+    border: 3px solid #f2304a;
+    box-shadow:
+      0 1px rgba(0,0,0,.13),
+      0 3px 0 -1px #c9283e,
+      0 4px 0 -1px rgba(0,0,0,.21),
+      0 5px 5px -2px rgba(0,0,0,.08);
+  }
+
+  .callForAction.green:hover {
+    background: #83AC35;
+    background: -webkit-linear-gradient(#83AC35, #83AC35);
+    background:    -moz-linear-gradient(#83AC35, #83AC35);
+    background:     -ms-linear-gradient(#83AC35, #83AC35);
+    background:      -o-linear-gradient(#83AC35, #83AC35);
+    background:         linear-gradient(#83AC35, #83AC35);
+  }
+
+  .callForAction.green {
+    text-shadow: 0 -1px #4e661f;
+    background: #7fa734;
+    background: -webkit-linear-gradient(#7fa734, #83AC35, #7fa734);
+    background:    -moz-linear-gradient(#7fa734, #83AC35, #7fa734);
+    background:     -ms-linear-gradient(#7fa734, #83AC35, #7fa734);
+    background:      -o-linear-gradient(#7fa734, #83AC35, #7fa734);
+    background:         linear-gradient(#7fa734, #83AC35, #7fa734);
+    border: 3px solid #81aa35;
+    box-shadow:
+      0 1px rgba(0,0,0,.13),
+      0 3px 0 -1px #4e661f,
+      0 4px 0 -1px rgba(0,0,0,.21),
+      0 5px 5px -2px rgba(0,0,0,.08);
+  }
+
   .callForAction:active {
     top: 1px;
     position: relative;
