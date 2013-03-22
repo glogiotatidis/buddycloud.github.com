@@ -123,9 +123,13 @@ nav {
   z-index: 1000;
 }
 
-.fixedHeader h1 {
-  font-size: 32px;
-}
+  .fixedHeader nav a {
+    padding: 30px 21px;
+  }
+
+  .fixedHeader h1 {
+    font-size: 32px;
+  }
 
 .primarySection {
   padding: 0;
@@ -150,11 +154,6 @@ nav {
 
   .primarySection .screenshots img {
     position: absolute;
-    opacity: 0;
-  }
-
-  .primarySection .screenshots img:first-child {
-    opacity: 1;
   }
 
 .hero {
@@ -180,14 +179,36 @@ nav {
     }
 
 .primarySection,
-.socialNetwork,
+.features,
 .forYourCompany {
   border-bottom: 1px solid rgba(0,0,0,.21);
 }
 
-.socialNetwork {
+.features {
   background: #eee;
 }
+
+.feature { overflow: hidden; }
+
+.feature.main h3 { font-size: 24px; }
+
+.feature.main p { font-size: 20px; }
+
+.feature.image-left,
+.feature.image-right {
+  margin: 0 0 50px;
+  padding: 25px 0 0;
+}
+
+  .feature.image-left img {
+    float: left;
+    margin: 0 35px 0 0;
+  }
+
+  .feature.image-right img {
+    float: right;
+    margin: 0 0 0 35px;
+  }
 
 /*.forYourCompany .container {
   position: relative;
