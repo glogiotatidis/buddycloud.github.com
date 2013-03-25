@@ -144,31 +144,34 @@ nav {
   }
 
   .primarySection .screenshots {
-    width: 500px;
-    height: 375px;
-    right: 0;
-    bottom: 0;
+    width: 670px;
+    height: 480px;
+    right: -36px;
+    bottom: -6px;
     position: absolute;
     z-index: -1;
+    background: url(img/browser-window.png) no-repeat;
   }
 
   .primarySection .screenshots img {
     position: absolute;
+    top: 24px;
+    left: 35px;
   }
 
 .hero {
-  padding: 35px 0 50px;
+  padding: 35px 0 75px;
   clear: right;
 }
   .hero h2 {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 70px;
     text-align: center;
     font-size: 80px;
   }
   .description {
-    width: 455px;
-    margin: 50px 0 0;
+    width: 370px;
+    margin: 60px 0 0;
     font-size: 24px;
     line-height: 1.5;
     max-width: 100%;
