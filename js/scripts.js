@@ -1,4 +1,5 @@
 $(function() {
+  'use strict';
 
   // fixed top bar
   $('.fixedHeader .container').append($('.primarySection header').clone());
@@ -16,17 +17,37 @@ $(function() {
     var $screenshots = $('.screenshots img'),
         $head = $screenshots.first(),
         $next = $head,
-        $current;
+        $current, intervalID;
 
-    setInterval(function() {
-      $current = $next;
-      $next = $current.next();
+    function start() {
+      attachPauseEvent();
+      startTimer();
+    }
 
-      if (!$next[0]) $next = $head;
+    function attachPauseEvent() {
+      $screenshots.mouseenter(function() { stopTimer(); })
+                  .mouseleave(function() { startTimer(); });
 
-      $current.fadeOut();
-      $next.fadeIn();
-    }, 4000);
+    }
+
+    function stopTimer() {
+      clearInterval(intervalID);
+    }
+
+    function startTimer() {
+      intervalID = setInterval(function() {
+        $current = $next;
+        $next = $current.next();
+
+        if (!$next[0]) $next = $head;
+
+        $current.fadeOut();
+        $next.fadeIn();
+      }, 4000);
+    }
+
+
+    start();
   }());
 
 });
