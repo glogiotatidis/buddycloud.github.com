@@ -2,4 +2,8 @@
 *.swp
 .DS_Store
 
+<<<<<<< HEAD
 node_modules
+=======
+.DS_Store
+>>>>>>> ignore .DS_store
