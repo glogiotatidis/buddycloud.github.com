@@ -195,7 +195,10 @@ nav {
 
 .feature { overflow: hidden; }
 
-.feature.main h3 { font-size: 24px; }
+.feature.main h3 {
+  max-width: 728px;
+  font-size: 24px;
+}
 
 .feature.main p { font-size: 20px; }
 
