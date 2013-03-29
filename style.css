@@ -189,7 +189,7 @@ nav {
   border-bottom: 1px solid rgba(0,0,0,.21);
 }
 
-.features, .contact {
+.features, .try-again {
   background: #eee;
 }
 
@@ -274,8 +274,20 @@ nav {
     margin: 15px;
   }
 
+.try-again {
+  text-align: center;
+}
+
+  .try-again a {
+    margin-right: 15px;
+  }
+
+  .try-again a:last-child {
+    margin-right: 0;
+  }
+
 .grid-2 .grid-1 { width: 452px; }
-.grid-4 .grid-1 { width: 283px; }
+.grid-3 .grid-1 { width: 283px; }
 .grid-1 {
   float: left;
   margin: 21px 55px 21px 0;
@@ -288,6 +300,7 @@ footer {
   border-top: 1px solid rgba(0,0,0,.34);
   box-shadow: 0 1px rgba(255,255,255,.34) inset, 0 0 5px rgba(0,0,0,.34);
 }
+
 footer .design {
   padding: 21px;
   font-size: 13px;
@@ -295,9 +308,23 @@ footer .design {
   color: rgba(255,255,255,.55);
   float: right;
 }
-footer nav {
+
+footer h3 {
+  margin: 25px 0 0;
+  display: block;
+  font-size: 24px;
+}
+
+footer ul {
   margin: 0;
-  float: left;
+  padding: 0;
+  list-style: none;
+}
+
+footer li { font-size: 18px; }
+
+footer a {
+  color: rgba(0,0,0,.55);
 }
 
 .clearfix:after {
