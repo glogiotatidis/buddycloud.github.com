@@ -18,15 +18,17 @@
   </div>
 
   <!-- first section (header) -->
-  <section class="primarySection">
+  <section id="home" class="primarySection">
     <div class="container">
       <header class="clearfix">
-        <h1>buddycloud</h1>
+        <h1><a class="scrollTo" href="#home">buddycloud</a></h1>
 
         <nav>
-          <a href="http://blog.buddycloud.com">blog</a>
-          <a href="https://buddycloud.org">developer wiki</a>
-          <a href="http://blog.buddycloud.com/press">press</a>
+          <a class="scrollTo features-nav" href="#features">features</a>
+          <a class="scrollTo examples-nav" href="#examples">example uses</a>
+          <a class="scrollTo friends-nav" href="#friends">friends</a>
+          <a class="scrollTo contact-nav" href="#contact">contact us</a>
+          <a href="http://blog.buddycloud.com" target="_blank">blog</a>
         </nav>
       </header>
 
@@ -57,101 +59,98 @@
   <!-- end first section (header) -->
 
   <!-- features section -->
-  <section class="features secondarySection">
+  <section id="features" class="features waypoint secondarySection" data-current="features-nav">
     <div class="container">
       <h2>buddycloud features</h2>
       <div class="main feature image-left">
         <h3>Celebrating protocol: open protocols, open source, open ecosystem</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-        <p>buddycloud and the <a href="http://w3c.org">W3C</a>, <a href="http://www.mozilla.org/foundation/">Mozilla Foundation</a>, and <a href="http://xmpp.org/">XSF</a> are working together to be the the strong foundation for an open social ecosystem.</p>
-        <p>
-	  Using open standards means that you don't have to depend on anyone else and can quickly finish your project using a wide range of free libraries.
-	</p>
-        <p>buddycloud is built by and for thinkers and makers who care about openness.</p>
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
 
-	<p>
-	  Everything liberally licensed under a liberal license: reference software for a webclient and Android gets you running fast.
-	</p>
-	<p>We believe in the open web. We're strong believers in open souce. Everything ActivityStrea.ms ATOM formatted posts.</p>
-	<p>sonny.piers@gmail.com (Sonny Piers) BC could be the server side HTML5 :p
-	Using buddycloud gives you enough karma to buy a stable of unicorns.
-	</p>
-	<p>
-	#GreatToBeOpen
-	</p>
+        <p>buddycloud and the <a href="http://w3c.org">W3C</a>, <a href="http://www.mozilla.org/foundation/">Mozilla Foundation</a>, and <a href="http://xmpp.org/">XSF</a> are working together to be the the strong foundation for an open social ecosystem.</p>
+
+        <p>Using open standards means that you don't have to depend on anyone else and can quickly finish your project using a wide range of free libraries.</p>
+        <p>buddycloud is built by and for thinkers and makers who care about openness.</p>
+        <p>Everything liberally licensed under a liberal license: reference software for a webclient and Android gets you running fast.</p>
+        <p>We believe in the open web. We're strong believers in open souce. Everything ActivityStrea.ms ATOM formatted posts.</p>
+        <p>sonny.piers@gmail.com (Sonny Piers) BC could be the server side HTML5 :p Using buddycloud gives you enough karma to buy a stable of unicorns.</p>
+        <p>#GreatToBeOpen</p>
       </div>
+
       <div class="main feature image-right">
         <h3>fork the buddycloud software and kickstart your project</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-        <p>
-          <ul>
-            <li>Avoid re-implementing a social stack on every single new project: buddycloud ships with working, Apache 2.0 licensed code, that will help get you started quickly.</li>
-            <li>The server is written in node.js, the webclient is a single-page backbone.js app, and and we have developed a native Android client.</li>
-            <li>All code is designed so that you can quickly and easily adapt and license under a do-what-you-want-with-it license.</li>
-          </ul>
-	</p>
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
+
+        <ul>
+          <li>Avoid re-implementing a social stack on every single new project: buddycloud ships with working, Apache 2.0 licensed code, that will help get you started quickly.</li>
+          <li>The server is written in node.js, the webclient is a single-page backbone.js app, and and we have developed a native Android client.</li>
+          <li>All code is designed so that you can quickly and easily adapt and license under a do-what-you-want-with-it license.</li>
+        </ul>
       </div>
+
       <div class="main feature image-left">
         <h3>Distributed by design</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
         <p>Imagine users on gmail couldn't send email to a hotmail account. Sounds crazy and yet that's how social networks are designed.</p>
-<p>buddycloud has designed a new way to share: each social network can connect and share information with other buddycloud websites. This means that your small website joins a much larger ecosystem of other domains also running buddycloud and users don't need to register again and again.</p>
+        <p>buddycloud has designed a new way to share: each social network can connect and share information with other buddycloud websites. This means that your small website joins a much larger ecosystem of other domains also running buddycloud and users don't need to register again and again.</p>
       </div>
+
       <div class="main feature image-right">
         <h3>privacy</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
         <p>Strong privacy controls are backed into buddycloud. Servers and clients communicate using SSL encryption. Users to create private (or open) spaces to share content. and can control  what data is shared with other sites running buddycloud.</p>
       </div>
+
       <div class="main feature image-left">
         <h3>media sharing</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-	  <p>The buddycloud media server lets users drag and drop content into their buddycloud channels and seamlessly synchronised between all sites running buddycloud. This is a like a huge distributed DropBox. Each website that uses buddycloud can share pictures, videos and documents with users on other websites running buddycloud or publicly.  Media can be shared with a selected group of users in a channel or the entire world.  <a href="https://github.com/buddycloud/buddycloud-media-server">Learn more</a>.</p>
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
+        <p>The buddycloud media server lets users drag and drop content into their buddycloud channels and seamlessly synchronised between all sites running buddycloud. This is a like a huge distributed DropBox. Each website that uses buddycloud can share pictures, videos and documents with users on other websites running buddycloud or publicly.  Media can be shared with a selected group of users in a channel or the entire world.  <a href="https://github.com/buddycloud/buddycloud-media-server">Learn more</a>.</p>
       </div>
+
       <div class="main feature image-right">
         <h3>buddycloud library and API</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-Quickly start developing using a sensible API and javascript library. Try it.
-To add social features quickly to your next project, the HTTP API and lib-buddycloud, a growing javascript library, will help you quickly build your own buddycloud client. Drop in, dead simple.
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
+        <p>Quickly start developing using a sensible API and javascript library. Try it.<br />
+        To add social features quickly to your next project, the HTTP API and lib-buddycloud, a growing javascript library, will help you quickly build your own buddycloud client. Drop in, dead simple.<br />
         <p>javascript console</p>
       </div>
+
       <div class="main feature image-left">
-	<h3>run your own buddycloud or have it hosted</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-	<p>We want you to be able to quickly start developing your own social features. You could install your own buddycloud stack: API, media, pusher, and buddycloud servers. Or, to get going even faster, we offer a free hosted solution that let's you "move out" your data when your needs grow and you decide to run your own buddycloud stack.</p>
-	<p>We make getting started easy - we can host your social API and later, when you have time, you can migrate out your data onto the same software that we host on.</p>
+        <h3>run your own buddycloud or have it hosted</h3>
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
+        <p>We want you to be able to quickly start developing your own social features. You could install your own buddycloud stack: API, media, pusher, and buddycloud servers. Or, to get going even faster, we offer a free hosted solution that let's you "move out" your data when your needs grow and you decide to run your own buddycloud stack.</p>
+        <p>We make getting started easy - we can host your social API and later, when you have time, you can migrate out your data onto the same software that we host on.</p>
       </div>
+
       <div class="main feature image-right">
         <h3>A helpful community</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
         <p> Changing the world is difficult. This is our approach. side projects - integration into mapping software (link to Ben's stuff) all pushing code upstream <embedded chat room using Candy if that is possible to host on github pages></p>
       </div>
+
       <div class="main feature image-left">
         <h3>professional services to help you</h3>
-        <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-	<p>
-We work with a number of large Telcos, browser vendors etc etc to support them.Scaling issues are good problems to have. buddycloud should grow with your increasing user growth. Scale where you need it: the XMPP service that powers buddycloud has been tested to support 5-10million simultaneous users<Tigase link>.
-	</p>
+        <img src="http://placehold.it/200x200" width="200" height="200" alt="" />
+        <p>We work with a number of large Telcos, browser vendors etc etc to support them.Scaling issues are good problems to have. buddycloud should grow with your increasing user growth. Scale where you need it: the XMPP service that powers buddycloud has been tested to support 5-10million simultaneous users<Tigase link>.</p>
       </div>
 
-
-<!-- buddycloud engines -->
+      <!-- buddycloud engines -->
       <div class="grid-2 clearfix">
         <div class="feature channels grid-1">
           <h3>recommendation engine</h3>
-	  <p>If you like the buddycloud channel food@foo.com then might be interenestd in omnomnom@bar.com. buddycloud includes a crawler with a nice API that helps your users find great content.</p>
+          <p>If you like the buddycloud channel food@foo.com then might be interenestd in omnomnom@bar.com. buddycloud includes a crawler with a nice API that helps your users find great content.</p>
         </div>
 
         <div class="feature privacy grid-1 last">
-	<h3>realtime search engine</h3>
-          <p>
-	  Find channels about cooking or posts about siamese cats. Fast. Public content on buddycloud is quickly indexed and searchable and accessible via a standardised API and firehose feed.
-	  </p>        
-	</div>
+          <h3>realtime search engine</h3>
+          <p>Find channels about cooking or posts about siamese cats. Fast. Public content on buddycloud is quickly indexed and searchable and accessible via a standardised API and firehose feed.</p>
+        </div>
+
         <div class="feature sharing grid-1">
           <h3>Social discovery engine</h3>
           <p>
            The buddycloud friend finder helps your users find their friends on other social networks. The FF uses hashes of identifiers: for example Twitter or Facebook account IDs. This extends the usefulness to existing circles of friends.</p>
         </div>
+
         <div class="feature mobile grid-1 last">
           <h3 class="coming_soon">push notification engine</h3>
           <p>
@@ -167,7 +166,7 @@ We work with a number of large Telcos, browser vendors etc etc to support them.S
   <!-- end of team/support section -->
 
   <!-- developers section -->
-  <section class="developers secondarySection">
+  <section id="examples" class="examples waypoint secondarySection" data-previous="features-nav" data-current="examples-nav">
     <div class="container grid-2 clearfix">
       <h2>example uses</h2>
 
@@ -175,9 +174,10 @@ We work with a number of large Telcos, browser vendors etc etc to support them.S
 
       <div class="grid-1">
         <h3>replace email</h3>
-	<p>from http://www.paulgraham.com/ambitious.html: As a todo list protocol, the new protocol should give more power to the recipient than email does. I want there to be more restrictions on what someone can put on my todo list. And when someone can put something on my todo list, I want them to tell me more about what they want from me. Do they want me to do something beyond just reading some text? How important is it? (There obviously has to be some mechanism to prevent people from saying everything is important.) When does it have to be done? <iframe width="300" height="225" src="http://www.youtube.com/embed/R9ITLdmfdLI?rel=0#t=655" frameborder="0" modestbranding="true" allowfullscreen></iframe>
-	</p>
-       </div>
+        <iframe width="440" height="225" src="http://www.youtube.com/embed/R9ITLdmfdLI?rel=0#t=655" frameborder="0" modestbranding="true" allowfullscreen></iframe>
+        <p>from <a href="http://www.paulgraham.com/ambitious.html" target="_blank">http://www.paulgraham.com/ambitious.html</a>: <br />
+        As a todo list protocol, the new protocol should give more power to the recipient than email does. I want there to be more restrictions on what someone can put on my todo list. And when someone can put something on my todo list, I want them to tell me more about what they want from me. Do they want me to do something beyond just reading some text? How important is it? (There obviously has to be some mechanism to prevent people from saying everything is important.) When does it have to be done?</p>
+     </div>
 
       <div class="grid-1 last">
         <h3>Face blog</h3>
@@ -185,9 +185,9 @@ We work with a number of large Telcos, browser vendors etc etc to support them.S
       </div>
 
       <div class="grid-1">
-      <h3>buddycloud for your team / a coroprate social network</h3>
-      <p>buddycloud helps your team take an idea, explore it and make things happen.</p>
-      <p>You can keep information belonging to you or your team secure by running your own buddycloud inside your firewall. You control which other companies can connect to your buddycloud server.</p>
+        <h3>buddycloud for your team / a coroprate social network</h3>
+        <p>buddycloud helps your team take an idea, explore it and make things happen.</p>
+        <p>You can keep information belonging to you or your team secure by running your own buddycloud inside your firewall. You control which other companies can connect to your buddycloud server.</p>
       </div>
 
       <div class="grid-1 last">
@@ -198,10 +198,28 @@ We work with a number of large Telcos, browser vendors etc etc to support them.S
     </div>
   </section>
   <!-- end of developers section -->
-  <!-- buccyloud's friends section -->
-  <section class="future secondarySection">
-    <div class="container grid-4 clearfix">
+
+  <!-- buddycloud's friends section -->
+  <section id="friends" class="friends waypoint secondarySection" data-previous="examples-nav" data-current="friends-nav">
+    <div class="container clearfix">
       <h2>friends of buddycloud</h2>
+      <ul>
+        <li><a href="#" target="_blank"><img src="img/partners/webfwd.png" title="Mozilla WebFWD" alt="Mozilla WebFWD" height="75" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/partners/brightroll.png" title="BrightRoll" alt="BrightRoll" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/partners/bmw.png" title="BMW" alt="BMW" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/partners/hillert.png" title="Hillert & Co" alt="Hillert & Co" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/partners/wikimedia.png" title="Wikipedia" alt="Wikipedia" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/partners/surevine.png" title="Surevine" alt="Surevine" height="40" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/partners/gi.png" title="German technology community" alt="German technology community" /></a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- end of buccyloud's friends section -->
+
+  <!-- contact us section -->
+  <section id="contact" class="contact waypoint secondarySection" data-previous="friends-nav" data-current="contact-nav">
+    <div class="container clearfix">
+      <h2>contact us</h2>
       <div class="grid-1">
         Mozilla WebFWD
         BrightRoll
@@ -213,19 +231,20 @@ We work with a number of large Telcos, browser vendors etc etc to support them.S
       </div>
     </div>
   </section>
-  <!-- end of buccyloud's friends section -->
+  <!-- end of contact us section -->
 
   <footer>
     <div class="container clearfix">
       <nav class="clearfix">
-        <a href="https://demo.buddycloud.org">join buddycloud</a>
-        <a href="http://blog.buddycloud.com">blog</a>
-        <a href="http://buddycloud.spreadshirt.net/">bcWear</a>
-        <a href="https://buddycloud.org">developer resources</a>
+        <a href="https://demo.buddycloud.org" target="_blank">try buddycloud</a>
+        <a href="http://blog.buddycloud.com" target="_blank">blog</a>
+        <a href="http://buddycloud.spreadshirt.net/" target="_blank">bcWear</a>
+        <a href="https://buddycloud.org" target="_blank">developer resources</a>
+        <a href="http://blog.buddycloud.com" target="_blank">press</a>
       </nav>
 
       <div class="design">
-        Made with a text-editor and love | 2013
+        Made with love and a text-editor | 2013
       </div>
     </div>
   </footer>

@@ -27,10 +27,9 @@ h1, h2, h3 {
   display: inline-block;
 }
 
-/*h1 {
-  margin: 55px 0 34px;
-  font-size: 89px;
-}*/
+h1 a {
+  color: black;
+}
 
 h2 {
   margin: 21px 0 34px;
@@ -100,7 +99,7 @@ nav {
     float: left;
     position: relative;
   }
-    nav a:hover, nav a.active { color: black; }
+    nav a:hover, nav a.active, nav .selected { color: black; }
   nav a:after {
     content: "";
     width: 1px;
@@ -185,11 +184,12 @@ nav {
 
 .primarySection,
 .features,
+.friends,
 .forYourCompany {
   border-bottom: 1px solid rgba(0,0,0,.21);
 }
 
-.features {
+.features, .contact {
   background: #eee;
 }
 
@@ -207,12 +207,12 @@ nav {
 
   .feature.image-left img {
     float: left;
-    margin: 0 35px 0 0;
+    margin: 0 25px 25px 0;
   }
 
   .feature.image-right img {
     float: right;
-    margin: 0 0 0 35px;
+    margin: 0 0 25px 25px;
   }
 
 /*.forYourCompany .container {
@@ -238,16 +238,16 @@ nav {
   margin: 0;
 }*/
 
-.developers {
+.examples {
   color: white;
   background: url(img/blue_noise.png);
   position: relative;
   overflow: hidden;
 }
-  .developers .container {
+  .examples .container {
     position: relative;
   }
-  .developers:before {
+  .examples:before {
     top: 0;
     content: "";
     width: 100%;
@@ -259,7 +259,20 @@ nav {
     position: absolute;
   }
 
-.future { background: white; }
+.friends { background: white; }
+
+  .friends ul {
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .friends li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px;
+  }
 
 .grid-2 .grid-1 { width: 452px; }
 .grid-4 .grid-1 { width: 283px; }
